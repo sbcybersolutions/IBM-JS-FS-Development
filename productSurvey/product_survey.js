@@ -7,6 +7,7 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const experience = document.getElementById('userExperience').value; // ✅ Get user experience value
 
     // Display feedback in the user info section
     document.getElementById('userName').innerText = username;
@@ -16,6 +17,7 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerText = designation;
     document.getElementById('userProductChoice').innerText = productType;
     document.getElementById('userFeedback').innerText = feedback;
+    document.getElementById('userExperienceDisplay').innerText = experience; // ✅ Display correctly
 
     // Make the user info section visible
     document.getElementById('userInfo').style.display = 'block';
